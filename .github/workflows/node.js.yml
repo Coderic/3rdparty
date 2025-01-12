@@ -9,6 +9,14 @@ on:
   pull_request:
     branches: [ "master" ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
 
@@ -30,4 +38,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: npm build
+    - run: npm run build
+    - run: cp ./dist/login-demo/index.html ./dist/login-demo/404.html
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist/login-demo/
