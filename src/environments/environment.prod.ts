@@ -14,7 +14,7 @@ export const environment = {
     domain,
     clientId,
     ...(audience && audience !== "YOUR_API_IDENTIFIER" ? { audience } : null),
-    redirectUri: window.location.href,
+    redirectUri: 'https://coderic.org/3rdparty/',
     errorPath,
   },
   httpInterceptor: {

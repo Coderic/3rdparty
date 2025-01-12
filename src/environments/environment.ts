@@ -20,7 +20,7 @@ export const environment = {
     clientId,
     authorizationParams: {
       ...(audience && audience !== 'YOUR_API_IDENTIFIER' ? { audience } : null),
-      redirect_uri: window.location.href,
+      redirect_uri: 'https://coderic.org/3rdparty/',
     },
     errorPath,
   },
