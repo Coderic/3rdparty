@@ -2,7 +2,7 @@
   "domain": "auth.coderic.org",
   "clientId": "In43D8hfptI5B17Xo7XZX4aBkhfMuH56",
   "authorizationParams": {
-    "audience": "https://auth.coderic.org/api/v2/stats/active-users"
+    "audience": "https://coderic.eu.auth0.com/api/v2/"
   },
   "apiUri": "http://localhost:3001",
   "appUri": "http://localhost:4200",
