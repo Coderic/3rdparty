@@ -9,6 +9,6 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   ping$() {
-    return this.http.get(`https://api.coderic.net/protected`);
+    return this.http.get(`${config.apiUri}/api/external`);
   }
 }
