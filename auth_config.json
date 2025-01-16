@@ -2,9 +2,9 @@
   "domain": "auth.coderic.org",
   "clientId": "In43D8hfptI5B17Xo7XZX4aBkhfMuH56",
   "authorizationParams": {
-    "audience": "https://api.coderic.net/"
+    "audience": "https://auth.coderic.org/api/v2/"
   },
-  "apiUri": "https://api.coderic.net/protected",
+  "apiUri": "http://localhost:3001",
   "appUri": "http://localhost:4200",
   "errorPath": "/error"
 }
