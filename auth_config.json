@@ -4,7 +4,7 @@
   "authorizationParams": {
     "audience": "https://coderic.eu.auth0.com/api/v2/"
   },
-  "apiUri": "http://localhost:3001",
+  "apiUri": "https://api.coderic.net",
   "appUri": "http://localhost:4200",
   "errorPath": "/error"
 }
